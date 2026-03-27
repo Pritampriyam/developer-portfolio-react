@@ -3,59 +3,52 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
   {
-    title: "Talent IQ - Real-Time Interview Platform",
+    title: "WorkNexus – Role-Based Access Control System",
     description:
-      "A full-stack interview platform featuring real-time code editing, 1-on-1 video interview rooms, and live chat. Includes an isolated code execution pipeline with automated test-case evaluation and instant feedback.",
-    image: "/projects/talentiq.png",
-    tags: ["React", "Node.js", "MongoDB", "WebRTC", "Clerk", "Inngest", "TanStack Query"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "Learning Management System",
-    description:
-      "A role-based LMS allowing students to browse courses, view ratings and pricing. Features protected routing for students and educators, global state via Context API, and session-aware auth using Clerk.",
-    image: "/projects/lms.png",
-    tags: ["React", "Vite", "Tailwind CSS", "React Router", "Clerk"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "Fintech Dashboard",
-    description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "A role-based access control system supporting Admin, Freelancer, and User roles with protected routes, dashboards, and CRUD operations. Features secure access control, analytics, and real-time role-specific functionality.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
+    tags: ["React", "TypeScript", "Tailwind CSS", "RBAC", "CRUD", "localStorage"],
     link: "#",
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "AI Interview Preparation Platform",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "A full-stack AI-driven platform that analyzes resumes and job descriptions to generate personalized interview strategies, match scores, questions, and preparation roadmaps. Includes secure JWT-based authentication and dynamic resume PDF generation.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+    tags: ["React", "Node.js", "Express", "MongoDB", "JWT", "Google Gemini AI", "Puppeteer"],
     link: "#",
     github: "#",
   },
+
   {
-    title: "AI Writing Assistant",
+    title: "Developer Portfolio Website",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "A modern, responsive developer portfolio built with React and Tailwind CSS featuring animated UI, project showcase, experience timeline, and an EmailJS-powered contact system for real-time communication.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+    tags: ["React", "Vite", "Tailwind CSS", "EmailJS", "JavaScript", "Responsive Design"],
     link: "#",
     github: "#",
   },
   {
-    title: "Project Management Tool",
+    title: "Full Stack Todo List Application",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+      "A feature-rich MERN stack todo application with task management, priority levels, due dates, drag-and-drop reordering, and real-time filtering. Includes a RESTful API, MongoDB persistence, and offline support using local storage.",
     image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    tags: ["Node.js", "Express.js", "MongoDB", "Mongoose", "JavaScript", "REST API", "HTML", "CSS"],
     link: "#",
     github: "#",
   },
+  {
+    title: "Aurora Weather – Animated Weather Forecast App",
+    description:
+      "A modern weather forecasting web app built with React and Tailwind CSS, featuring animated UI, real-time weather data using Open-Meteo API, hourly & daily forecasts, and smart activity and outfit suggestions.",
+    image: "/projects/project5.png",
+    tags: ["React", "Vite", "Tailwind CSS", "Open-Meteo API", "JavaScript", "Responsive UI"],
+    link: "#",
+    github: "#",
+  },
+
 ];
 
 export const Projects = () => {
