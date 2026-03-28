@@ -20,13 +20,13 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 9006248209",
-    href: "tel:+919006248209",
+    value: "+91 9003248009",
+    href: "tel:+919003248009",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Bhopal, Madhya Pradesh",
+    value: "Bangalore, Karnataka, India",
     href: "#",
   },
 ];
@@ -198,9 +198,9 @@ export const Contact = () => {
                   }`}
                 >
                   {submitStatus.type === "success" ? (
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 shrink-0" />
                   ) : (
-                    <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                    <AlertCircle className="w-5 h-5 shrink-0" />
                   )}
                   <p className="text-sm">{submitStatus.message}</p>
                 </div>
