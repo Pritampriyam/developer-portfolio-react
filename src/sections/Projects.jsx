@@ -9,7 +9,7 @@ const projects = [
     image: "/projects/project1.png",
     tags: ["React", "TypeScript", "Tailwind CSS", "RBAC", "CRUD", "localStorage"],
     link: "#",
-    github: "#",
+    github: "https://github.com/Pritampriyam/-WorkNexus-Role-Based-Access-Control-System",
   },
   {
     title: "AI Interview Preparation Platform",
@@ -17,8 +17,8 @@ const projects = [
       "A full-stack AI-driven platform that analyzes resumes and job descriptions to generate personalized interview strategies, match scores, questions, and preparation roadmaps. Includes secure JWT-based authentication and dynamic resume PDF generation.",
     image: "/projects/project2.png",
     tags: ["React", "Node.js", "Express", "MongoDB", "JWT", "Google Gemini AI", "Puppeteer"],
-    link: "#",
-    github: "#",
+    link: "https://interviewnavigator-a71o.onrender.com",
+    github: "https://github.com/Pritampriyam/InterviewNavigator",
   },
 
   {
@@ -27,8 +27,8 @@ const projects = [
       "A modern, responsive developer portfolio built with React and Tailwind CSS featuring animated UI, project showcase, experience timeline, and an EmailJS-powered contact system for real-time communication.",
     image: "/projects/project3.png",
     tags: ["React", "Vite", "Tailwind CSS", "EmailJS", "JavaScript", "Responsive Design"],
-    link: "#",
-    github: "#",
+    link: "https://developer-portfolio-wheat-three.vercel.app/",
+    github: "https://github.com/Pritampriyam/developer-portfolio-react",
   },
   {
     title: "Full Stack Todo List Application",
@@ -36,8 +36,11 @@ const projects = [
       "A feature-rich MERN stack todo application with task management, priority levels, due dates, drag-and-drop reordering, and real-time filtering. Includes a RESTful API, MongoDB persistence, and offline support using local storage.",
     image: "/projects/project4.png",
     tags: ["Node.js", "Express.js", "MongoDB", "Mongoose", "JavaScript", "REST API", "HTML", "CSS"],
-    link: "#",
-    github: "#",
+    
+    link: "https://animated-todo-app.onrender.com",
+    github: "https://github.com/Pritampriyam/Animated-Todo-App",
+  
+
   },
   {
     title: "Aurora Weather – Animated Weather Forecast App",
@@ -45,8 +48,8 @@ const projects = [
       "A modern weather forecasting web app built with React and Tailwind CSS, featuring animated UI, real-time weather data using Open-Meteo API, hourly & daily forecasts, and smart activity and outfit suggestions.",
     image: "/projects/project5.png",
     tags: ["React", "Vite", "Tailwind CSS", "Open-Meteo API", "JavaScript", "Responsive UI"],
-    link: "#",
-    github: "#",
+    link: "https://weather-app-nrg9.onrender.com",
+    github: "https://github.com/Pritampriyam/weather-app",
   },
 
 ];

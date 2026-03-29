@@ -2,6 +2,7 @@ import { Button } from "@/components/Button";
 import {
   ArrowRight,
   ChevronDown,
+  Code,
   Github,
   Linkedin,
   Download,
@@ -9,24 +10,20 @@ import {
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
+  "Python",
+  "JavaScript",
   "React",
   "Node.js",
-  "JavaScript",
-  "Python",
   "MongoDB",
   "MySQL",
-  "Oracle DB",
-  "PL/SQL",
   "Express.js",
   "Tailwind CSS",
   "REST APIs",
-  "WebRTC",
   "Git",
   "GitHub",
   "DSA",
   "OOP",
-  "Clerk",
-  "TanStack Query",
+
 ];
 
 export const Hero = () => {
@@ -39,7 +36,7 @@ export const Hero = () => {
           alt="Hero image"
           className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
+        <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background" />
       </div>
 
       {/* Green Dots */}
@@ -51,9 +48,8 @@ export const Hero = () => {
               backgroundColor: "#20B2A6",
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animation: `slow-drift ${
-                15 + Math.random() * 20
-              }s ease-in-out infinite`,
+              animation: `slow-drift ${15 + Math.random() * 20
+                }s ease-in-out infinite`,
               animationDelay: `${Math.random() * 5}s`,
             }}
           />
@@ -93,28 +89,80 @@ export const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
+              <a href="/resume/pritamresume.pdf" download>
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
+            {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
+
               {[
-                { icon: Github, href: "https://github.com/" },
-                { icon: Linkedin, href: "https://linkedin.com/in/" },
+                {
+                  type: "icon",
+                  icon: Github,
+                  href: "https://github.com/Pritampriyam",
+                  label: "GitHub",
+                },
+                {
+                  type: "icon",
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/pritam-kumar-89a9982b6/",
+                  label: "LinkedIn",
+                },
+                {
+                  type: "image",
+                  // src: "/icons/leetcode.png",
+                  src: "https://logo.svgcdn.com/devicon/leetcode-original.svg",
+                  href: "https://leetcode.com/u/pritam_0001/",
+                  label: "LeetCode",
+                  color: "#FFA116",
+                },
+                {
+                  type: "image",
+                  src: "https://img.icons8.com/?size=100&id=vAtJFm3hwtQw&format=png&color=000000",
+                  href: "https://www.codechef.com/users/pritam002",
+                  label: "CodeChef",
+                  color: "#5B4638",
+                },
+                {
+                  type: "image",
+                  src: "/gfg.png",
+                  href: "https://www.geeksforgeeks.org/profile/pritampr40sf?tab=activity",
+                  label: "GeeksforGeeks",
+                  color: "#2F8D46",
+                },
               ].map((social, idx) => (
                 <a
                   key={idx}
                   href={social.href}
-                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="p-2 rounded-full glass hover:bg-primary/10 transition-all duration-300 group"
                 >
-                  <social.icon className="w-5 h-5" />
+                  {social.type === "icon" ? (
+                    <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+                  ) : (
+                    <img
+                      src={social.src}
+                      alt={social.label}
+                      title={social.label}
+                      className="w-5 h-5 object-contain transition-all duration-300
+                 filter grayscale brightness-75
+                 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-110"
+                    />
+                  )}
                 </a>
               ))}
             </div>
@@ -133,7 +181,7 @@ export const Hero = () => {
                 <img
                   src="/profile-photo.jpg"
                   alt="Pritam Kumar"
-                  className="w-full aspect-[4/5] object-cover rounded-2xl"
+                  className="w-full aspect-4/5 object-cover rounded-2xl"
                 />
 
                 {/* Floating Badge */}
