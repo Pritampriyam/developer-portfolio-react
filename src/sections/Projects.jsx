@@ -8,7 +8,7 @@ const projects = [
       "A role-based access control system supporting Admin, Freelancer, and User roles with protected routes, dashboards, and CRUD operations. Features secure access control, analytics, and real-time role-specific functionality.",
     image: "/projects/project1.png",
     tags: ["React", "TypeScript", "Tailwind CSS", "RBAC", "CRUD", "localStorage"],
-    link: "#",
+    link: "https://work-nexus-role-based-access-contro.vercel.app/",
     github: "https://github.com/Pritampriyam/-WorkNexus-Role-Based-Access-Control-System",
   },
   {
