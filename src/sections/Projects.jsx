@@ -3,6 +3,15 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
   {
+    title: "Interview Copilot",
+    description:
+      "Interview Intelligence is a full-stack AI-powered interview preparation platform that helps job seekers analyze resumes, identify skill gaps, generate interview questions, create ATS-optimized resumes, and practice AI-generated answers. The platform provides session-based interview management, progress tracking, and personalized insights to improve interview readiness and increase job application success.",
+    image: "/projects/project6.png",
+    tags: ["Full Stack", "AI", "Resume Analysis", "ATS", "Interview Preparation"],
+    link: "https://smart-interview-platform-gold.vercel.app/", // Add the live project URL here
+    github: "https://github.com/Pritampriyam/smart-interview-platform", // Add the GitHub repository URL here
+  },
+  {
     title: "WorkNexus – Role-Based Access Control System",
     description:
       "A role-based access control system supporting Admin, Freelancer, and User roles with protected routes, dashboards, and CRUD operations. Features secure access control, analytics, and real-time role-specific functionality.",
@@ -51,7 +60,33 @@ const projects = [
     link: "https://weather-app-nrg9.onrender.com",
     github: "https://github.com/Pritampriyam/weather-app",
   },
-
+  {
+    title: "Real-Time Communication",
+    description:
+      "Built a real-time lead tracking platform using React Native, Node.js, Socket.IO, and Meta Webhooks, enabling instant lead delivery to mobile devices without manual refresh.",
+    image: "/projects/project7.png",
+    tags: ["React Native", "Node.js", "Socket.IO", "Meta Webhooks", "Real-Time"],
+    link: "", // Add the live project URL here
+    github: "https://github.com/Pritampriyam/react-native-lead-tracker", // Add the GitHub repository URL here
+  },
+  {
+    title: "Healthcare Analytics Dashboard",
+    description:
+      "A responsive healthcare dashboard built with React and Vite that visualizes patient health records through interactive charts, diagnostic tables, and a modern dashboard interface. The application consumes real patient data from the Coalition Technologies API and provides an intuitive experience for healthcare professionals.",
+    image: "/projects/project9.png",
+    tags: ["React", "Vite", "Healthcare", "Data Visualization", "REST API"],
+    link: "https://healthcare-dashboard-react-bice.vercel.app/", // Add the live project URL here
+    github: "https://github.com/Pritampriyam/healthcare-dashboard-react#-healthcare-dashboard-react", // Add the GitHub repository URL here
+  },
+  {
+    title: "Scroll-Driven Hero Section Animation",
+    description:
+      "A premium single-screen hero experience where scrolling controls a car's horizontal movement, road progress, statistic card reveals, and a custom scrollbar. Smooth GSAP-powered interpolation synchronizes every element to create an immersive, interactive visual story.",
+    image: "/projects/project8.png",
+    tags: ["React", "Vite", "Tailwind CSS", "GSAP", "JavaScript"],
+    link: "https://scroll-hero-animation-blond.vercel.app/",
+    github: "https://github.com/Pritampriyam/scroll-hero-animation",
+  },
 ];
 
 export const Projects = () => {
