@@ -1,4 +1,4 @@
-import { Award, Code, Flame, Star } from "lucide-react";
+import { Award, Code, Flame, Trophy } from "lucide-react";
 
 // ✅ Data array (REQUIRED)
 const achievements = [
@@ -11,20 +11,20 @@ const achievements = [
       "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=800&auto=format&fit=crop",
   },
   {
+    title: "TCS CodeVita Season 13 — Global Rank 1603",
+    description:
+      "Secured Global Rank 1603 in TCS CodeVita Season 13, demonstrating strong competitive programming, data structures, algorithms, optimization, and problem-solving skills under time constraints.",
+    icon: Trophy,
+    image:
+      "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=800&auto=format&fit=crop",
+  },
+  {
     title: "1500+ DSA Problems Solved",
     description:
       "Solved problems across LeetCode, CodeChef, and GeeksforGeeks.",
     icon: Code,
     image:
       "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    title: "CodeChef 2★ Rating",
-    description:
-      "Achieved 2-star rating in competitive programming.",
-    icon: Star,
-    image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop",
   },
   {
     title: "500+ Day Coding Streak",
