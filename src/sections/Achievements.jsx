@@ -7,16 +7,15 @@ const achievements = [
     description:
       "Certified by Microsoft demonstrating foundational knowledge of cloud services and Azure.",
     icon: Award,
-    image:
-      "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=800&auto=format&fit=crop",
+    certificate: "/Certification/Azure%20Fundamentals.pdf",
   },
   {
     title: "TCS CodeVita Season 13 — Global Rank 1603",
     description:
       "Secured Global Rank 1603 in TCS CodeVita Season 13, demonstrating strong competitive programming, data structures, algorithms, optimization, and problem-solving skills under time constraints.",
     icon: Trophy,
-    image:
-      "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=800&auto=format&fit=crop",
+    certificate:
+      "/Certification/TCS%20CodeVita%20Season%2013%20Certificate%20-%20pritamgupta07.pdf",
   },
   {
     title: "1500+ DSA Problems Solved",
@@ -76,11 +75,33 @@ export const Achievement = () => {
             >
               {/* Image */}
               <div className="relative h-40 overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
+                {item.certificate ? (
+                  <>
+                    <object
+                      data={`${item.certificate}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+                      type="application/pdf"
+                      aria-label={`${item.title} certificate`}
+                      className="w-full h-full bg-white pointer-events-none"
+                    >
+                      <p className="p-4 text-black">
+                        Certificate preview unavailable.
+                      </p>
+                    </object>
+                    <a
+                      href={item.certificate}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`View ${item.title} certificate`}
+                      className="absolute inset-0 z-10"
+                    />
+                  </>
+                ) : (
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
 
