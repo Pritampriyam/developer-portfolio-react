@@ -1,11 +1,36 @@
 const experiences = [
   {
-    period: "May 2023 — Aug 2023",
-    role: "Web Development Intern",
+    period: "February 2026 — Present",
+    role: "Associate Operations",
+    company: "CoinDCX, Bangalore",
+    description:
+      "Manage cryptocurrency deposit and withdrawal verification, AML and Travel Rule compliance checks, KYC, in-person verification, and bank account validation. Analyze transaction records, investigate discrepancies, and maintain accurate operational reports using Excel and internal tools.",
+    technologies: [
+      "Crypto Operations",
+      "AML Compliance",
+      "Travel Rule",
+      "Microsoft Excel",
+      "Risk Management",
+      "KYC Verification",
+    ],
+    current: true,
+  },
+  {
+    period: "June 2025 — January 2026",
+    role: "Full Stack Developer Intern",
     company: "Ramraj Technology Solutions Pvt. Ltd., Bhopal",
     description:
-      "Worked with relational databases to store, retrieve, and manage application data. Wrote and optimized SQL queries with joins and subqueries. Debugged database issues, collaborated cross-functionally, and participated in code reviews and technical documentation.",
-    technologies: ["SQL", "MySQL", "Node.js", "Express.js"],
+      "Built and deployed a full-stack AI-powered interview preparation platform using the MERN stack and Gemini AI. Developed responsive interfaces, REST APIs, JWT authentication, resume analysis, interview question generation, skill-gap insights, and ATS resume recommendations.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Gemini AI",
+      "Docker",
+    ],
     current: false,
   },
   {
@@ -15,7 +40,7 @@ const experiences = [
     description:
       "Pursuing a Bachelor of Technology with specialization in Artificial Intelligence. Built full-stack projects including a real-time interview platform and a role-based LMS. Solved 1500+ coding problems and maintained a 501-day coding streak.",
     technologies: ["React", "Node.js", "MongoDB", "PL/SQL", "Python"],
-    current: true,
+    current: false,
   },
   {
     period: "Completed 2022",
@@ -70,8 +95,8 @@ export const Experience = () => {
             className="text-muted-foreground
            animate-fade-in animation-delay-200"
           >
-            From classroom foundations to real-world internship experience —
-            a timeline of my academic and professional growth.
+            From classroom foundations to professional experience — a timeline
+            of my academic and career growth.
           </p>
         </div>
 
